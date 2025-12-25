@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0.1em;
+}
+
+.deployForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  max-width: 520px;
+  margin: 0.75rem auto 0;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.deployLabel {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.deployInput {
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  outline: none;
+}
+
+.deployInput:focus {
+  border-color: rgba(100, 108, 255, 0.9);
+  box-shadow: 0 0 0 4px rgba(100, 108, 255, 0.18);
+}
+
+.deployButton {
+  height: 42px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: rgba(100, 108, 255, 0.95);
+  border: 1px solid rgba(100, 108, 255, 0.95);
+  color: white;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.deployButton:hover {
+  filter: brightness(1.05);
+}
+
+.deployButton:active {
+  transform: translateY(1px);
+}
+
+.read-the-docs {
+  color: #888;
+}
