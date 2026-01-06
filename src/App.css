@@ -94,3 +94,7 @@
 .read-the-docs {
   color: #888;
 }
+
+.history ul li {
+  list-style: none;
+}
